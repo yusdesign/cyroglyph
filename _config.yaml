@@ -13,7 +13,7 @@ plugins:
 # Cyroglyph settings
 typography:
   font_name: "Cyroglyph"
-  font_url: "https://yus.github.io/cyroglyph.woff2"
+  font_url: "https://yus.github.io/cyroglyph/assets/fonts/cyroglyph.woff2"
   optimal_sizes: [16, 24, 32, 48, 64, 72, 96]
   character_count: 478
   features:
