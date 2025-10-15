@@ -1,7 +1,7 @@
 title: "Cyroglyph Brand Kit"
 description: "Pixel-perfect typography with palindrome loader"
-baseurl: "" # Leave empty if using username.github.io repo
-url: "https://yus.github.io/cyroglyph" # Replace with your username
+baseurl: "/cyroglyph" # Leave empty if using username.github.io repo
+url: "https://yus.github.io" # Replace with your username
 
 # Build settings
 markdown: kramdown
