@@ -1,0 +1,15 @@
+sizes:
+  - size: 16
+    use: "Primary body text >> Modern interfaces"
+  - size: 24
+    use: "Section headings >> UI titles"
+  - size: 32
+    use: "Page headers >> Important labels"
+  - size: 48
+    use: "Hero text >> Display headings"
+  - size: 64
+    use: "Large displays >> Brand messaging"
+  - size: 72
+    use: "Impact statements >> Poster design"
+  - size: 96
+    use: "Maximum legibility >> Exhibition scale"

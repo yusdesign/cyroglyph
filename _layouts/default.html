@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="theme-toggle">
+      <button onclick="toggleDarkMode()" class="cyroglyph-btn">🌙/☀️</button>
+    </div>
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    <script src="{{ '/assets/js/darkmode.js' | relative_url }}"></script>
+  </body>
+</html>

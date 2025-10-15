@@ -1,0 +1,25 @@
+title: "Cyroglyph Brand Kit"
+description: "Pixel-perfect typography with palindromes"
+baseurl: ""
+url: "https://yus.github.io/cyroglyph/"
+markdown: kramdown
+
+typography:
+  font_name: "Cyroglyph"
+  font_url: "https://yus.github.io/cyroglyph.woff2"
+  optimal_sizes: [16, 24, 32, 48, 64, 72, 96]
+  character_count: 478
+  features:
+    - "Full Cyrillic + Basic Latin"
+    - "Google Fonts Basic Sets"
+    - "478 total symbols"
+
+colors:
+  light:
+    bg: "#f8fafc"
+    surface: "#ffffff"
+    text: "#2d3748"
+  dark:
+    bg: "#1a202c"
+    surface: "#2d3748"
+    text: "#e2e8f0"

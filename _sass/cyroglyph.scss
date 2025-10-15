@@ -1,0 +1,91 @@
+.cyroglyph {
+  font-family: 'Cyroglyph', 'Monaco', 'Consolas', monospace;
+  font-weight: normal !important;
+  font-style: normal !important;
+  image-rendering: pixelated;
+  text-rendering: optimizeSpeed;
+}
+
+.cyroglyph h1, .cyroglyph h2, .cyroglyph h3, .cyroglyph h4, .cyroglyph h5, .cyroglyph h6 {
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+
+.cyroglyph-input {
+  @extend .cyroglyph;
+  font-size: 16px !important;
+  padding: 8px 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 4px;
+  background: white;
+}
+
+.cyroglyph-btn {
+  @extend .cyroglyph;
+  font-size: 16px !important;
+  padding: 8px 16px;
+  background: #2d3748;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cyroglyph-title {
+  @extend .cyroglyph;
+  font-size: 100px !important;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 110px !important;
+}
+
+@each $size in 16, 24, 32, 48, 64, 72, 96 {
+  .cyroglyph-#{$size} {
+    @extend .cyroglyph;
+    font-size: #{$size}px !important;
+    line-height: #{$size * 1.2}px !important;
+  }
+}
+
+.legacy-hardware-section {
+  position: relative;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #111517;
+  border-radius: 8px;
+  border-left: 4px solid #ed8936;
+}
+
+.cyroglyph-legacy-8, .cyroglyph-legacy-12 {
+  @extend .cyroglyph;
+  font-size: 16px !important;
+  line-height: 25px !important;
+  color: #e2e8f0;
+  padding-left: 25px;
+  border-left-color: #ed8936;
+}
+
+.fontstruct-showcase {
+  position: relative;
+  margin: 2rem 0;
+  padding: 4rem 2rem 2rem 2rem;
+  background: #1a202c;
+  border-radius: 8px;
+  border: 2px solid #4a5568;
+  min-height: 300px;
+}
+
+.palindrome-loader {
+  background: #f0f9ff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.usage-examples {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f0f9ff;
+  border-radius: 4px;
+}

@@ -1,0 +1,15 @@
+.dark-mode {
+  background: #1a202c;
+  color: #e2e8f0;
+
+  .cyroglyph { color: #e2e8f0; }
+  .container { background: #2d3748; }
+  .palindrome-loader { background: #2d3748; }
+  .usage-examples { background: #2a4365; color: #e2e8f0; }
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
