@@ -1,0 +1,162 @@
+.cyroglyph, .cyroglyph-legacy-8, .cyroglyph-legacy-12, .cyroglyph-96, .cyroglyph-72, .cyroglyph-64, .cyroglyph-48, .cyroglyph-32, .cyroglyph-24, .cyroglyph-16, .cyroglyph-title, .cyroglyph-btn, .cyroglyph-input {
+  font-family: "Cyroglyph", "Monaco", "Consolas", monospace;
+  font-weight: normal !important;
+  font-style: normal !important;
+  image-rendering: pixelated;
+  text-rendering: optimizeSpeed;
+}
+
+.cyroglyph h1, .cyroglyph-legacy-8 h1, .cyroglyph-legacy-12 h1, .cyroglyph-96 h1, .cyroglyph-72 h1, .cyroglyph-64 h1, .cyroglyph-48 h1, .cyroglyph-32 h1, .cyroglyph-24 h1, .cyroglyph-16 h1, .cyroglyph-title h1, .cyroglyph-btn h1, .cyroglyph-input h1, .cyroglyph h2, .cyroglyph-legacy-8 h2, .cyroglyph-legacy-12 h2, .cyroglyph-96 h2, .cyroglyph-72 h2, .cyroglyph-64 h2, .cyroglyph-48 h2, .cyroglyph-32 h2, .cyroglyph-24 h2, .cyroglyph-16 h2, .cyroglyph-title h2, .cyroglyph-btn h2, .cyroglyph-input h2, .cyroglyph h3, .cyroglyph-legacy-8 h3, .cyroglyph-legacy-12 h3, .cyroglyph-96 h3, .cyroglyph-72 h3, .cyroglyph-64 h3, .cyroglyph-48 h3, .cyroglyph-32 h3, .cyroglyph-24 h3, .cyroglyph-16 h3, .cyroglyph-title h3, .cyroglyph-btn h3, .cyroglyph-input h3, .cyroglyph h4, .cyroglyph-legacy-8 h4, .cyroglyph-legacy-12 h4, .cyroglyph-96 h4, .cyroglyph-72 h4, .cyroglyph-64 h4, .cyroglyph-48 h4, .cyroglyph-32 h4, .cyroglyph-24 h4, .cyroglyph-16 h4, .cyroglyph-title h4, .cyroglyph-btn h4, .cyroglyph-input h4, .cyroglyph h5, .cyroglyph-legacy-8 h5, .cyroglyph-legacy-12 h5, .cyroglyph-96 h5, .cyroglyph-72 h5, .cyroglyph-64 h5, .cyroglyph-48 h5, .cyroglyph-32 h5, .cyroglyph-24 h5, .cyroglyph-16 h5, .cyroglyph-title h5, .cyroglyph-btn h5, .cyroglyph-input h5, .cyroglyph h6, .cyroglyph-legacy-8 h6, .cyroglyph-legacy-12 h6, .cyroglyph-96 h6, .cyroglyph-72 h6, .cyroglyph-64 h6, .cyroglyph-48 h6, .cyroglyph-32 h6, .cyroglyph-24 h6, .cyroglyph-16 h6, .cyroglyph-title h6, .cyroglyph-btn h6, .cyroglyph-input h6 {
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+
+.cyroglyph-input {
+  font-size: 16px !important;
+  padding: 8px 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 4px;
+  background: white;
+}
+
+.cyroglyph-btn {
+  font-size: 16px !important;
+  padding: 8px 16px;
+  background: #2d3748;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cyroglyph-title {
+  font-size: 100px !important;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 110px !important;
+}
+
+.cyroglyph-16 {
+  font-size: 16px !important;
+  line-height: 19.2px !important;
+}
+
+.cyroglyph-24 {
+  font-size: 24px !important;
+  line-height: 28.8px !important;
+}
+
+.cyroglyph-32 {
+  font-size: 32px !important;
+  line-height: 38.4px !important;
+}
+
+.cyroglyph-48 {
+  font-size: 48px !important;
+  line-height: 57.6px !important;
+}
+
+.cyroglyph-64 {
+  font-size: 64px !important;
+  line-height: 76.8px !important;
+}
+
+.cyroglyph-72 {
+  font-size: 72px !important;
+  line-height: 86.4px !important;
+}
+
+.cyroglyph-96 {
+  font-size: 96px !important;
+  line-height: 115.2px !important;
+}
+
+.legacy-hardware-section {
+  position: relative;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #111517;
+  border-radius: 8px;
+  border-left: 4px solid #ed8936;
+}
+
+.cyroglyph-legacy-8, .cyroglyph-legacy-12 {
+  font-size: 16px !important;
+  line-height: 25px !important;
+  color: #e2e8f0;
+  padding-left: 25px;
+  border-left-color: #ed8936;
+}
+
+.fontstruct-showcase {
+  position: relative;
+  margin: 2rem 0;
+  padding: 4rem 2rem 2rem 2rem;
+  background: #1a202c;
+  border-radius: 8px;
+  border: 2px solid #4a5568;
+  min-height: 300px;
+}
+
+.palindrome-loader {
+  background: #f0f9ff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.usage-examples {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f0f9ff;
+  border-radius: 4px;
+}
+
+.dark-mode {
+  background: #1a202c;
+  color: #e2e8f0;
+}
+.dark-mode .cyroglyph, .dark-mode .cyroglyph-input, .dark-mode .cyroglyph-btn, .dark-mode .cyroglyph-title, .dark-mode .cyroglyph-16, .dark-mode .cyroglyph-24, .dark-mode .cyroglyph-32, .dark-mode .cyroglyph-48, .dark-mode .cyroglyph-64, .dark-mode .cyroglyph-72, .dark-mode .cyroglyph-96, .dark-mode .cyroglyph-legacy-8, .dark-mode .cyroglyph-legacy-12 {
+  color: #e2e8f0;
+}
+.dark-mode .container {
+  background: #2d3748;
+}
+.dark-mode .palindrome-loader {
+  background: #2d3748;
+}
+.dark-mode .usage-examples {
+  background: #2a4365;
+  color: #e2e8f0;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+body {
+  font-family: system-ui;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .container {
+  background: #2d3748;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=main.css.map */
