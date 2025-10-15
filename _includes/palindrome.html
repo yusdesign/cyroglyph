@@ -1,0 +1,56 @@
+<div id="loader">
+  <div class="palindrome-loader">
+    <h3>🔤 Cyroglyph Brand Kit Loader</h3>
+    <p>Test font readability with a palindrome:</p>
+
+    <div class="input-group">
+      <input type="text" id="textInput" placeholder="Enter text..." class="cyroglyph-input">
+      <button onclick="checkPalindrome()" class="cyroglyph-btn">Check</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+    function checkPalindrome() {
+      const input = document.getElementById('textInput').value;
+      const resultDiv = document.getElementById('result');
+
+      if (!input) {
+        resultDiv.innerHTML = '<p style="color: #666;">Please enter some text</p>';
+        return;
+      }
+
+      const cleanStr = input.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+      const isPalindrome = cleanStr === cleanStr.split('').reverse().join('');
+
+      if (isPalindrome) {
+        resultDiv.innerHTML = '<p style="color: #10b981;">✓ "' + input + '" is a palindrome!</p>';
+        // Auto-proceed to brand kit after successful palindrome
+        setTimeout(function() {
+          document.getElementById('loader').style.display = 'none';
+          document.getElementById('brandKit').style.display = 'block';
+        }, 1500);
+      } else {
+        resultDiv.innerHTML = '<p style="color: #ef4444;">✗ "' + input + '" is not a palindrome</p>';
+      }
+    }
+
+    // Example palindromes for inspiration
+    const examples = ['radar', 'level', 'rotor', 'madam', 'racecar'];
+    document.getElementById('textInput').placeholder = 'e.g., ' + examples[Math.floor(Math.random() * examples.length)];
+
+    // Enter key support
+    document.getElementById('textInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') checkPalindrome();
+    });
+    </script>
+
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: #666;">
+      Tip: Enter a palindrome to unlock the brand kit
+    </p>
+  </div>
+</div>
+
+<div id="brandKit" style="display: none;">
+  <!-- Brand kit content will be loaded here -->
+</div>

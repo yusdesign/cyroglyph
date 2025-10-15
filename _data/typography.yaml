@@ -1,0 +1,50 @@
+sizes:
+  - size: 16
+    use: "Primary body text • Modern interfaces"
+    line_height: 19
+    example: "The quick brown fox jumps over the lazy dog"
+
+  - size: 24
+    use: "Section headings • UI titles"
+    line_height: 29
+    example: "Configuration Panel"
+
+  - size: 32
+    use: "Page headers • Important labels"
+    line_height: 38
+    example: "API Reference v2.1"
+
+  - size: 48
+    use: "Hero text • Display headings"
+    line_height: 58
+    example: "Cyroglyph Type System"
+
+  - size: 64
+    use: "Large displays • Brand messaging"
+    line_height: 77
+    example: "CREATE • DESIGN • BUILD"
+
+  - size: 72
+    use: "Impact statements • Poster design"
+    line_height: 86
+    example: "PIXEL PERFECTION"
+
+  - size: 96
+    use: "Maximum legibility • Exhibition scale"
+    line_height: 115
+    example: "2008→FUTURE"
+
+legacy_sizes:
+  - size: 8
+    use: "Embedded systems • Microcontroller displays"
+    line_height: 10
+    example: "RAM: 512KB OK"
+    era: "Flash era hardware"
+
+  - size: 12
+    use: "Legacy interfaces • Industrial controls"
+    line_height: 14
+    example: "192.168.1.1:8080"
+    era: "2008 embedded systems"
+
+historical_note: "Originally crafted in 2008 for Adobe Flash interfaces and embedded hardware with Fontstruct software, Cyroglyph now bridges legacy precision with modern digital design."

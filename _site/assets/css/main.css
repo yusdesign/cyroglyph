@@ -1,0 +1,481 @@
+@charset "UTF-8";
+.cyroglyph, .cyroglyph-legacy-12, .cyroglyph-legacy-8, .cyroglyph-96, .cyroglyph-72, .cyroglyph-64, .cyroglyph-48, .cyroglyph-32, .cyroglyph-24, .cyroglyph-16, .cyroglyph-title, .cyroglyph-btn, .cyroglyph-input {
+  font-family: "Cyroglyph", "Monaco", "Consolas", monospace;
+  font-weight: normal !important;
+  font-style: normal !important;
+  /* Pixel perfection enforcement */
+  image-rendering: pixelated !important;
+  text-rendering: optimizeSpeed !important;
+  -webkit-font-smoothing: none !important;
+  -moz-osx-font-smoothing: none !important;
+  font-smooth: never !important;
+}
+
+/* CRUCIAL: Force pixel sizing on ALL elements including headlines */
+.cyroglyph h1, .cyroglyph-legacy-12 h1, .cyroglyph-legacy-8 h1, .cyroglyph-96 h1, .cyroglyph-72 h1, .cyroglyph-64 h1, .cyroglyph-48 h1, .cyroglyph-32 h1, .cyroglyph-24 h1, .cyroglyph-16 h1, .cyroglyph-title h1, .cyroglyph-btn h1, .cyroglyph-input h1,
+.cyroglyph h2,
+.cyroglyph-legacy-12 h2,
+.cyroglyph-legacy-8 h2,
+.cyroglyph-96 h2,
+.cyroglyph-72 h2,
+.cyroglyph-64 h2,
+.cyroglyph-48 h2,
+.cyroglyph-32 h2,
+.cyroglyph-24 h2,
+.cyroglyph-16 h2,
+.cyroglyph-title h2,
+.cyroglyph-btn h2,
+.cyroglyph-input h2,
+.cyroglyph h3,
+.cyroglyph-legacy-12 h3,
+.cyroglyph-legacy-8 h3,
+.cyroglyph-96 h3,
+.cyroglyph-72 h3,
+.cyroglyph-64 h3,
+.cyroglyph-48 h3,
+.cyroglyph-32 h3,
+.cyroglyph-24 h3,
+.cyroglyph-16 h3,
+.cyroglyph-title h3,
+.cyroglyph-btn h3,
+.cyroglyph-input h3,
+.cyroglyph h4,
+.cyroglyph-legacy-12 h4,
+.cyroglyph-legacy-8 h4,
+.cyroglyph-96 h4,
+.cyroglyph-72 h4,
+.cyroglyph-64 h4,
+.cyroglyph-48 h4,
+.cyroglyph-32 h4,
+.cyroglyph-24 h4,
+.cyroglyph-16 h4,
+.cyroglyph-title h4,
+.cyroglyph-btn h4,
+.cyroglyph-input h4,
+.cyroglyph h5,
+.cyroglyph-legacy-12 h5,
+.cyroglyph-legacy-8 h5,
+.cyroglyph-96 h5,
+.cyroglyph-72 h5,
+.cyroglyph-64 h5,
+.cyroglyph-48 h5,
+.cyroglyph-32 h5,
+.cyroglyph-24 h5,
+.cyroglyph-16 h5,
+.cyroglyph-title h5,
+.cyroglyph-btn h5,
+.cyroglyph-input h5,
+.cyroglyph h6,
+.cyroglyph-legacy-12 h6,
+.cyroglyph-legacy-8 h6,
+.cyroglyph-96 h6,
+.cyroglyph-72 h6,
+.cyroglyph-64 h6,
+.cyroglyph-48 h6,
+.cyroglyph-32 h6,
+.cyroglyph-24 h6,
+.cyroglyph-16 h6,
+.cyroglyph-title h6,
+.cyroglyph-btn h6,
+.cyroglyph-input h6,
+.cyroglyph p,
+.cyroglyph-legacy-12 p,
+.cyroglyph-legacy-8 p,
+.cyroglyph-96 p,
+.cyroglyph-72 p,
+.cyroglyph-64 p,
+.cyroglyph-48 p,
+.cyroglyph-32 p,
+.cyroglyph-24 p,
+.cyroglyph-16 p,
+.cyroglyph-title p,
+.cyroglyph-btn p,
+.cyroglyph-input p,
+.cyroglyph span,
+.cyroglyph-legacy-12 span,
+.cyroglyph-legacy-8 span,
+.cyroglyph-96 span,
+.cyroglyph-72 span,
+.cyroglyph-64 span,
+.cyroglyph-48 span,
+.cyroglyph-32 span,
+.cyroglyph-24 span,
+.cyroglyph-16 span,
+.cyroglyph-title span,
+.cyroglyph-btn span,
+.cyroglyph-input span,
+.cyroglyph div,
+.cyroglyph-legacy-12 div,
+.cyroglyph-legacy-8 div,
+.cyroglyph-96 div,
+.cyroglyph-72 div,
+.cyroglyph-64 div,
+.cyroglyph-48 div,
+.cyroglyph-32 div,
+.cyroglyph-24 div,
+.cyroglyph-16 div,
+.cyroglyph-title div,
+.cyroglyph-btn div,
+.cyroglyph-input div,
+.cyroglyph li,
+.cyroglyph-legacy-12 li,
+.cyroglyph-legacy-8 li,
+.cyroglyph-96 li,
+.cyroglyph-72 li,
+.cyroglyph-64 li,
+.cyroglyph-48 li,
+.cyroglyph-32 li,
+.cyroglyph-24 li,
+.cyroglyph-16 li,
+.cyroglyph-title li,
+.cyroglyph-btn li,
+.cyroglyph-input li {
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.cyroglyph-input {
+  font-size: 16px !important;
+  padding: 8px 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 4px;
+  background: white;
+}
+.cyroglyph-input:focus {
+  outline: none;
+  border-color: #4299e1;
+}
+
+.cyroglyph-btn {
+  font-size: 16px !important;
+  padding: 8px 16px;
+  background: #2d3748;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cyroglyph-btn:hover {
+  background: #4a5568;
+}
+
+.cyroglyph-title {
+  font-size: 100px !important; /* MASSIVE HEADER */
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 110px !important;
+}
+
+/* Updated size axis: 16px+ focus with legacy hardware sizes */
+.cyroglyph-16 {
+  font-size: 16px !important;
+  line-height: 19.2px !important;
+}
+
+.cyroglyph-24 {
+  font-size: 24px !important;
+  line-height: 28.8px !important;
+}
+
+.cyroglyph-32 {
+  font-size: 32px !important;
+  line-height: 38.4px !important;
+}
+
+.cyroglyph-48 {
+  font-size: 48px !important;
+  line-height: 57.6px !important;
+}
+
+.cyroglyph-64 {
+  font-size: 64px !important;
+  line-height: 76.8px !important;
+}
+
+.cyroglyph-72 {
+  font-size: 72px !important;
+  line-height: 86.4px !important;
+}
+
+.cyroglyph-96 {
+  font-size: 96px !important;
+  line-height: 115.2px !important;
+}
+
+/* Legacy hardware sizes (2008 Flash era) */
+.cyroglyph-legacy-8 {
+  font-size: 8px !important;
+  line-height: 9.6px !important;
+  opacity: 0.8;
+}
+.cyroglyph-legacy-8::before {
+  content: "⚡ Legacy: ";
+  font-size: 10px !important;
+  opacity: 0.6;
+}
+
+.cyroglyph-legacy-12 {
+  font-size: 12px !important;
+  line-height: 14.4px !important;
+  opacity: 0.8;
+}
+.cyroglyph-legacy-12::before {
+  content: "⚡ Legacy: ";
+  font-size: 10px !important;
+  opacity: 0.6;
+}
+
+.legacy {
+  border-left-color: #ed8936 !important;
+  background: #fffaf0;
+}
+.legacy .use-case {
+  font-size: 12px !important;
+  opacity: 0.7;
+}
+
+.historical-note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f7fafc;
+  border-left: 4px solid #4299e1;
+  font-size: 14px !important;
+}
+
+.dark-mode .legacy {
+  background: #2d1a12;
+  border-left-color: #ed8936 !important;
+}
+.dark-mode .historical-note {
+  background: #2a4365;
+}
+
+/* Legacy Hardware Section with Small Background */
+.legacy-hardware-section {
+  position: relative;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #111517;
+  border-radius: 8px;
+  border-left: 4px solid #ed8936;
+  /* Small hardware background for legacy text */
+}
+.legacy-hardware-section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 120px;
+  background-image: url("/assets/images/hardware.png");
+  background-size: 400px 120px; /* Exact small size */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* Fontstruct Showcase Section */
+.fontstruct-showcase {
+  position: relative;
+  margin: 2rem 0;
+  padding: 4rem 2rem 2rem 2rem; /* Extra top padding for image */
+  background: #1a202c;
+  border-radius: 8px;
+  border: 2px solid #4a5568;
+  min-height: 300px;
+  /* Large Fontstruct background */
+}
+.fontstruct-showcase::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 890px;
+  height: 403px;
+  background-image: url("/assets/images/fontstruct.png");
+  background-size: 890px 403px; /* Original size, no scaling */
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 1;
+}
+.fontstruct-showcase {
+  /* Content overlay */
+}
+.fontstruct-showcase .showcase-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(26, 32, 44, 0.8);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.cyroglyph-legacy-8,
+.cyroglyph-legacy-12 {
+  font-family: "Cyroglyph", "Monaco", "Consolas", monospace !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 25px !important;
+  color: rgb(226, 232, 240);
+  margin-left: 0px;
+  padding-left: 25px;
+  border-left-color: rgb(237, 137, 54);
+  background: transparent;
+  opacity: 1 !important;
+}
+
+.cyroglyph-legacy-8::before,
+.cyroglyph-legacy-12::before {
+  content: " >> Legacy : ";
+  font-family: "Cyroglyph", "Monaco", "Consolas", monospace !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 25px !important;
+  color: rgb(226, 232, 240);
+  opacity: 1 !important;
+}
+
+.use-case {
+  font-family: "Cyroglyph", "Monaco", "Consolas", monospace !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 25px !important;
+  color: rgb(226, 232, 240);
+  opacity: 1 !important;
+  margin-top: 0.5rem;
+}
+
+.dark-mode {
+  background: #1a202c;
+  color: #e2e8f0;
+}
+.dark-mode .cyroglyph, .dark-mode .cyroglyph-input, .dark-mode .cyroglyph-btn, .dark-mode .cyroglyph-title, .dark-mode .cyroglyph-16, .dark-mode .cyroglyph-24, .dark-mode .cyroglyph-32, .dark-mode .cyroglyph-48, .dark-mode .cyroglyph-64, .dark-mode .cyroglyph-72, .dark-mode .cyroglyph-96, .dark-mode .cyroglyph-legacy-8, .dark-mode .cyroglyph-legacy-12 {
+  color: #e2e8f0;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+}
+.dark-mode .cyroglyph-input {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+.dark-mode .cyroglyph-input:focus {
+  border-color: #63b3ed;
+}
+.dark-mode .cyroglyph-btn {
+  background: #4a5568;
+}
+.dark-mode .cyroglyph-btn:hover {
+  background: #718096;
+}
+.dark-mode .palindrome-loader {
+  background: #2d3748;
+}
+.dark-mode .container {
+  background: #2d3748;
+}
+.dark-mode {
+  /* FIX: Example usage div in dark mode */
+}
+.dark-mode #brandKit .cyroglyph-demo {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+.dark-mode {
+  /* Specific fix for the example usage box */
+}
+.dark-mode #brandKit div[style*="background: #f0f9ff"] {
+  background: #2a4365 !important; /* Dark blue instead of light blue */
+  color: #e2e8f0 !important;
+  border: 1px solid #4a5568;
+}
+.dark-mode {
+  /* Fix for all colored boxes in brand kit */
+}
+.dark-mode #brandKit div[style*="background:"],
+.dark-mode #brandKit .usage-examples {
+  background: #2a4365 !important;
+  color: #e2e8f0 !important;
+}
+.dark-mode .usage-examples {
+  background: #2a4365 !important;
+  color: #e2e8f0;
+  border: 1px solid #4a5568;
+}
+.dark-mode .legacy-hardware-section {
+  background: #111517;
+  border-left-color: #ed8936;
+}
+.dark-mode .legacy-hardware-section::after {
+  opacity: 0.9;
+}
+.dark-mode .fontstruct-showcase {
+  background: #1a202c;
+  border-color: #4a5568;
+}
+.dark-mode .fontstruct-showcase::before {
+  opacity: 0.8;
+}
+.dark-mode .fontstruct-showcase .showcase-content {
+  background: rgba(26, 32, 44, 0.9);
+}
+.dark-mode .cyroglyph-legacy-8,
+.dark-mode .cyroglyph-legacy-12,
+.dark-mode .cyroglyph-legacy-8::before,
+.dark-mode .cyroglyph-legacy-12::before,
+.dark-mode .use-case {
+  color: rgb(226, 232, 240) !important;
+  opacity: 1 !important;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .container {
+  background: #2d3748;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+  color: #718096;
+}
+
+.dark-mode footer {
+  border-top-color: #4a5568;
+}
+
+/*# sourceMappingURL=main.css.map */

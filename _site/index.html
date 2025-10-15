@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Cyroglyph Brand Kit</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <style>
+  @font-face {
+    font-family: 'Cyroglyph';
+    src: url('https://yus.github.io/cyroglyph.woff2') format('woff2');
+    font-display: swap;
+    font-weight: normal; /* EXPLICITLY NORMAL */
+    font-style: normal;  /* EXPLICITLY NORMAL */
+    font-stretch: normal; /* NO CONDENSED/EXPANDED */
+  }
+  </style>
+</head>
+
+  <body>
+    <div class="theme-toggle">
+      <button onclick="toggleDarkMode()" class="cyroglyph-btn">🌙/☀️</button>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1 class="cyroglyph-title">Cyroglyph Brand Kit</h1>
+        <p>Pixel-perfect typography with palindrome loader</p>
+      </header>
+
+      <main>
+        <div id="loader">
+  <div class="palindrome-loader">
+    <h3>🔤 Cyroglyph Brand Kit Loader</h3>
+    <p>Test font readability with a palindrome:</p>
+
+    <div class="input-group">
+      <input type="text" id="textInput" placeholder="Enter text..." class="cyroglyph-input" />
+      <button onclick="checkPalindrome()" class="cyroglyph-btn">Check</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+    function checkPalindrome() {
+      const input = document.getElementById('textInput').value;
+      const resultDiv = document.getElementById('result');
+
+      if (!input) {
+        resultDiv.innerHTML = '<p style="color: #666;">Please enter some text</p>';
+        return;
+      }
+
+      const cleanStr = input.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+      const isPalindrome = cleanStr === cleanStr.split('').reverse().join('');
+
+      if (isPalindrome) {
+        resultDiv.innerHTML = '<p style="color: #10b981;">✓ "' + input + '" is a palindrome!</p>';
+        // Auto-proceed to brand kit after successful palindrome
+        setTimeout(function() {
+          document.getElementById('loader').style.display = 'none';
+          document.getElementById('brandKit').style.display = 'block';
+        }, 1500);
+      } else {
+        resultDiv.innerHTML = '<p style="color: #ef4444;">✗ "' + input + '" is not a palindrome</p>';
+      }
+    }
+
+    // Example palindromes for inspiration
+    const examples = ['radar', 'level', 'rotor', 'madam', 'racecar'];
+    document.getElementById('textInput').placeholder = 'e.g., ' + examples[Math.floor(Math.random() * examples.length)];
+
+    // Enter key support
+    document.getElementById('textInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') checkPalindrome();
+    });
+    </script>
+
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: #666;">
+      Tip: Enter a palindrome to unlock the brand kit
+    </p>
+  </div>
+</div>
+
+<div id="brandKit" style="display: none;">
+  <!-- Brand kit content will be loaded here -->
+</div>
+
+<div id="brandKitContent" style="display: none;">
+<h1 class="cyroglyph-title">Cyroglyph</h1>
+<p class="cyroglyph-24" style="text-align: center; margin-bottom: 3rem;">
+Pixel-perfect typography with palindromes.<br />
+* Cyroglyph Brand Kit, a fontface for falling away …
+</p>
+
+<div class="cyroglyph-demo">
+  <h2 class="cyroglyph-32">Font Demonstration</h2>
+  <p class="cyroglyph-24">Character Support: Basic Latin + Enhanced Cyrillic (478 symbols)</p>
+
+  <h3 class="cyroglyph-24">Modern Sizes (16px+):</h3>
+
+  <div class="cyroglyph-16 size-demo">
+    16px: The quick brown fox jumps over the lazy dog
+    <div class="use-case">Primary body text &gt;&gt; Modern interfaces</div>
+  </div>
+
+  <div class="cyroglyph-24 size-demo">
+    24px: Configuration Panel
+    <div class="use-case">Section headings &gt;&gt; UI titles</div>
+  </div>
+
+  <div class="cyroglyph-32 size-demo">
+    32px: API Reference v2.1
+    <div class="use-case">Page headers &gt;&gt; Important labels</div>
+  </div>
+
+  <div class="cyroglyph-48 size-demo">
+    48px: Cyroglyph Type System
+    <div class="use-case">Hero text &gt;&gt; Display headings</div>
+  </div>
+
+  <div class="cyroglyph-64 size-demo">
+    64px: CREATE &gt;&gt; DESIGN &gt;&gt; BUILD
+    <div class="use-case">Large displays &gt;&gt; Brand messaging</div>
+  </div>
+
+  <div class="cyroglyph-72 size-demo">
+    72px: PIXEL PERFECTION
+    <div class="use-case">Impact statements &gt;&gt; Poster design</div>
+  </div>
+
+  <div class="cyroglyph-96 size-demo">
+    96px: 2008 &gt; FUTURE
+    <div class="use-case">Maximum legibility &gt; &gt; &gt; Exhibition scale</div>
+  </div>
+
+  <!-- Legacy Hardware Section -->
+  <div class="legacy-hardware-section">
+    <h3 class="cyroglyph-24">Legacy Hardware (2008 Flash Era):</h3>
+
+    <div class="cyroglyph-legacy-8 size-demo legacy">
+      RAM: 512KB OK
+      <div class="use-case">Embedded systems &gt;&gt; Microcontroller displays</div>
+    </div>
+
+    <div class="cyroglyph-legacy-12 size-demo legacy">
+      192.168.1.1:8080
+      <div class="use-case">Legacy interfaces &gt;&gt; Industrial controls</div>
+    </div>
+  </div>
+
+  <div class="historical-note">
+    <h4 class="cyroglyph-24">✨ Updated Today!</h4>
+    <p class="cyroglyph-16">Now featuring 478 symbols: Full Cyrillic, Basic Latin &amp; Google Fonts Basic sets, plus special characters: ♥ ◼ ▲ and more glyphs.</p>
+  </div>
+
+  <h3 class="cyroglyph-24">Cyrillic Test:</h3>
+  <div class="cyroglyph-24">
+    Съешь же ещё этих мягких французских булок, да выпей чаю
+  </div>
+
+  <h3 class="cyroglyph-24">Symbol Showcase:</h3>
+  <div class="cyroglyph-24">
+    ★ ◼ ▲ ⚡ ❤ → ← ↑ ↓ ♥ ◻ △ ◊ ♠ ♣ ♦ ♪ ♫ 1234567890 !@#$%^&amp;*()
+  </div>
+</div>
+
+<div class="usage-examples">
+  <h3 class="cyroglyph-24">Usage Evolution:</h3>
+  <ul class="cyroglyph-16">
+    <li><strong>2008-2012:</strong> Flash interfaces, embedded hardware, microcontroller displays</li>
+    <li><strong>2013-2020:</strong> Technical documentation, industrial control systems</li>
+    <li><strong>2021+:</strong> Modern web interfaces, brand systems, bilingual applications</li>
+  </ul>
+</div>
+
+<button onclick="location.reload()" class="cyroglyph-btn cyroglyph-16">
+  Back to Loader
+</button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const brandKitContent = document.getElementById('brandKitContent');
+  const brandKit = document.getElementById('brandKit');
+
+  if (brandKitContent && brandKit) {
+    brandKit.innerHTML = brandKitContent.innerHTML;
+    brandKitContent.remove();
+  }
+});
+</script>
+
+
+      </main>
+
+      <footer>
+        <p>Cyroglyph • 354 symbols • Pixel perfection</p>
+      </footer>
+    </div>
+
+    <script src="/assets/js/darkmode.js"></script>
+  </body>
+</html>

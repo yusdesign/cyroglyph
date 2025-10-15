@@ -1,0 +1,101 @@
+// Dark Mode Styles
+.dark-mode {
+  background: #1a202c;
+  color: #e2e8f0;
+
+  .cyroglyph {
+    color: #e2e8f0;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+  }
+
+  .cyroglyph-input {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+
+    &:focus {
+      border-color: #63b3ed;
+    }
+  }
+
+  .cyroglyph-btn {
+    background: #4a5568;
+
+    &:hover {
+      background: #718096;
+    }
+  }
+
+  .palindrome-loader {
+    background: #2d3748;
+  }
+
+  .container {
+    background: #2d3748;
+  }
+
+  /* FIX: Example usage div in dark mode */
+  #brandKit .cyroglyph-demo {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: #e2e8f0;
+  }
+
+  /* Specific fix for the example usage box */
+  #brandKit div[style*="background: #f0f9ff"] {
+    background: #2a4365 !important; /* Dark blue instead of light blue */
+    color: #e2e8f0 !important;
+    border: 1px solid #4a5568;
+  }
+
+  /* Fix for all colored boxes in brand kit */
+  #brandKit div[style*="background:"],
+  #brandKit .usage-examples {
+    background: #2a4365 !important;
+    color: #e2e8f0 !important;
+  }
+
+  .usage-examples {
+    background: #2a4365 !important;
+    color: #e2e8f0;
+    border: 1px solid #4a5568;
+  }
+  
+  .legacy-hardware-section {
+    background: #111517;
+    border-left-color: #ed8936;
+
+    &::after {
+      opacity: 0.9;
+    }
+  }
+
+  .fontstruct-showcase {
+    background: #1a202c;
+    border-color: #4a5568;
+
+    &::before {
+      opacity: 0.8;
+    }
+
+    .showcase-content {
+      background: rgba(26, 32, 44, 0.9);
+    }
+  }
+
+  .cyroglyph-legacy-8,
+  .cyroglyph-legacy-12,
+  .cyroglyph-legacy-8::before,
+  .cyroglyph-legacy-12::before,
+  .use-case {
+    color: rgb(226, 232, 240) !important;
+    opacity: 1 !important;
+  }
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}

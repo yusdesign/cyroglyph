@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="theme-toggle">
+      <button onclick="toggleDarkMode()" class="cyroglyph-btn">🌙/☀️</button>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1 class="cyroglyph-title">{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+      <footer>
+        <p>Cyroglyph • {{ site.typography.character_count }} symbols • Pixel perfection</p>
+      </footer>
+    </div>
+
+    <script src="{{ '/assets/js/darkmode.js' | relative_url }}"></script>
+  </body>
+</html>

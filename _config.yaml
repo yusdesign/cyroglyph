@@ -1,0 +1,28 @@
+title: "Cyroglyph Brand Kit"
+description: "Pixel-perfect typography with palindrome loader"
+baseurl: "" # Leave empty if using username.github.io repo
+url: "https://yus.github.io/cyroglyph/" # Replace with your username
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Cyroglyph settings
+typography:
+  font_name: "Cyroglyph"
+  font_url: "https://yus.github.io/cyroglyph.woff2"
+  optimal_sizes: [16, 24, 32, 48, 64, 72, 96]
+  character_count: 478
+  features:
+    - "Full Cyrillic + Basic Latin"
+    - "Google Fonts Basic Sets"
+    - "478 total symbols"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
