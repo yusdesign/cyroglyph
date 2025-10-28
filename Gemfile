@@ -1,7 +1,9 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
+gem "webrick"
 gem "kramdown"
+gem "jekyll-sass-converter"
 
 # GitHub Pages uses these plugins
 group :jekyll_plugins do
